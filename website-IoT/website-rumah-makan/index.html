@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rumah Makan Selera Nusantara - Sajian kuliner otentik Indonesia dengan cita rasa rempah asli, bahan segar pilihan, dan suasana hangat bersantap keluarga. 100% Offline & Cepat.">
+  <meta name="keywords" content="rumah makan, kuliner nusantara, ayam bakar madu, mie goreng seafood, es jeruk kelapa, restoran indonesia, menu offline">
+  <title>Rumah Makan Selera Nusantara | Cita Rasa Otentik Tradisional</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= Site Header & Sticky Navbar ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <!-- Brand Logo -->
+      <a href="#beranda" class="brand-link" id="brandLink" title="Kembali ke Beranda">
+        <img src="images/logo.svg" alt="Logo Selera Nusantara" class="brand-logo-img" width="220" height="52">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi Utama">
+        <a href="#beranda" class="nav-link active" id="navHome">Beranda</a>
+        <a href="#keunggulan" class="nav-link" id="navFeatures">Keunggulan</a>
+        <a href="#katalog-menu" class="nav-link" id="navMenu">Katalog Menu</a>
+        <a href="#tentang-kami" class="nav-link" id="navAbout">Tentang Kami</a>
+        <a href="#informasi-kontak" class="nav-link" id="navContact">Lokasi &amp; Jam</a>
+      </nav>
+
+      <!-- Header Actions (Offline Status + Cart Toggle) -->
+      <div class="header-actions">
+        <div class="offline-pill" title="Aplikasi berjalan 100% offline tanpa internet">
+          <span class="offline-dot"></span>
+          <span>100% Offline</span>
+        </div>
+
+        <button class="cart-toggle-btn js-cart-toggle" id="headerCartBtn" aria-label="Buka Keranjang Pesanan">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+          <span class="cart-label">Pesanan</span>
+          <span class="cart-count-badge js-cart-count" style="display:none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu Navigasi Mobile">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Main Content Area ================= -->
+  <main id="mainContent">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="hero-tag">🌟 Cita Rasa Tradisional Sejak 2011</span>
+            <span class="offline-pill" style="font-size:0.75rem; padding:3px 10px;">Akses Instan Tanpa Kuota</span>
+          </div>
+
+          <h1 class="hero-title">
+            Nikmati Kelezatan <span>Otentik Nusantara</span> di Setiap Suapan
+          </h1>
+
+          <p class="hero-description">
+            Menghadirkan resep warisan leluhur dengan racikan bumbu rempah pilihan, bahan segar setiap pagi, dan suasana bersantap yang nyaman dan penuh kehangatan keluarga.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#katalog-menu" class="btn-primary" id="btnCtaMenu">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+              Jelajahi Menu Pilihan
+            </a>
+
+            <button class="btn-outline js-cart-toggle" id="btnCtaOrder">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+              </svg>
+              Cek Keranjang Pesanan
+            </button>
+          </div>
+
+          <!-- Hero Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🌿</div>
+              <div class="highlight-info">
+                <h4>100% Halal</h4>
+                <p>Bahan alami teruji</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔥</div>
+              <div class="highlight-info">
+                <h4>Wok &amp; Bakar Asli</h4>
+                <p>Aroma arang &amp; wok hei</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⭐</div>
+              <div class="highlight-info">
+                <h4>Rating 4.9/5.0</h4>
+                <p>15.000+ Ulasan Puas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Card -->
+        <div class="hero-banner-card">
+          <img src="images/banner-main.jpg" alt="Hidangan Nusantara Komplit Selera Nusantara" class="hero-banner-img" width="700" height="460">
+          
+          <div class="hero-floating-badge">
+            <div class="badge-chef">
+              <div class="chef-avatar">👨‍🍳</div>
+              <div>
+                <h5>Chef Ragil &amp; Tim Dapur</h5>
+                <p>Olahan rempah otentik tradisional</p>
+              </div>
+            </div>
+            <div class="badge-rating">
+              <div class="stars">★★★★★</div>
+              <div class="rating-text">4.9 / 5.0 (Google Review)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section class="section-features" id="keunggulan">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Komitmen Kami</span>
+          <h2 class="section-title">Mengapa Bersantap di Selera Nusantara?</h2>
+          <p class="section-desc">Kualitas rasa dan kepuasan pelanggan adalah dedikasi utama yang kami jaga di setiap piring hidangan.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-box">🍗</div>
+            <h3>Ayam Pejantan Pilihan</h3>
+            <p>Daging lebih padat, gurih alami, dan tidak berlemak berlebih, dimarinasi semalaman dengan madu hutan.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-box">🌶️</div>
+            <h3>Sambal Uleg Dadakan</h3>
+            <p>Cabai rawit dan terasi pilihan diuleg di cobek batu secara dadakan agar kesegaran dan aromanya tetap meledak.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-box">❄️</div>
+            <h3>Ruang Nyaman Ber-AC</h3>
+            <p>Area bersantap indoor sejuk dan outdoor asri berkonsep joglo tradisional, pas untuk acara keluarga dan rekan kerja.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-box">⚡</div>
+            <h3>Pelayanan Sigap</h3>
+            <p>Sistem dapur terorganisir memastikan pesanan Anda matang hangat dan disajikan tepat waktu tanpa menunggu lama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Katalog Menu Section -->
+    <section class="section-menu" id="katalog-menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Katalog Santapan</span>
+          <h2 class="section-title">Daftar Menu Favorit Pilihan</h2>
+          <p class="section-desc">Pilih hidangan kesukaan Anda, saring berdasarkan kategori, atau cari menu dengan mudah secara instan.</p>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="menu-toolbar">
+          <div class="toolbar-top">
+            <!-- Search Bar -->
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" 
+                     id="searchInput" 
+                     class="search-input" 
+                     placeholder="Cari menu favorit... (cth: ayam bakar, mie, es jeruk)"
+                     aria-label="Cari menu hidangan">
+              <button class="clear-search-btn" id="clearSearchBtn" title="Hapus pencarian">✕</button>
+            </div>
+
+            <!-- Result Count Indicator -->
+            <div class="menu-count-info" id="menuCount">
+              Memuat pilihan menu...
+            </div>
+          </div>
+
+          <!-- Category Tabs -->
+          <nav class="category-filter-nav" id="categoryFilterNav" aria-label="Filter Kategori Menu">
+            <!-- Rendered by JavaScript -->
+          </nav>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Rendered dynamically by script.js from data-menu.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section class="section-about" id="tentang-kami">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="about-img-frame">
+            <img src="images/banner-main.jpg" alt="Suasana Meja Restoran Selera Nusantara" class="about-img" width="600" height="400" loading="lazy">
+          </div>
+          <div class="about-badge-established">
+            <span>Sejak 2011</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Cerita Dapur Kami</span>
+          <h2 class="section-title">Menghidupkan Tradisi Rasa dari Sabang Hingga Merauke</h2>
+          <p class="about-text">
+            Rumah Makan Selera Nusantara berawal dari kecintaan keluarga kami terhadap kekayaan bumbu rempah nusantara. Bermula dari satu gerai kecil dengan menu andalan Ayam Bakar Madu dan Sambal Bawang Korek, kini kami berkembang menjadi destinasi kuliner favorit keluarga, wisatawan, dan pecinta kuliner nusantara.
+          </p>
+          <p class="about-text">
+            Kami percaya bahwa makanan bukan sekadar pengisi perut, melainkan medium kehangatan yang mempertemukan canda tawa sanak saudara di atas meja makan.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>15+ Thn</h3>
+              <p>Menjaga Cita Rasa</p>
+            </div>
+            <div class="stat-item">
+              <h3>40+</h3>
+              <p>Ragam Menu Nusantara</p>
+            </div>
+            <div class="stat-item">
+              <h3>100K+</h3>
+              <p>Porsi Disajikan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informasi Lokasi, Jam & Reservasi -->
+    <section class="section-info" id="informasi-kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Kunjungi Kami</span>
+          <h2 class="section-title">Lokasi &amp; Jam Operasional</h2>
+          <p class="section-desc">Nikmati santap di tempat (Dine-in) atau bawa pulang (Takeaway). Kami siap menyambut Anda dengan hangat.</p>
+        </div>
+
+        <div class="info-cards-grid">
+          <!-- Card 1: Jam Buka -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon">🕒</div>
+              <div>
+                <h3>Jam Operasional</h3>
+                <span class="info-highlight">Buka Setiap Hari</span>
+              </div>
+            </div>
+            <div class="info-details">
+              <p><strong>Senin – Jumat:</strong> 10:00 – 21:30 WIB</p>
+              <p><strong>Sabtu – Minggu / Libur:</strong> 09:30 – 22:00 WIB</p>
+              <p style="margin-top:8px; font-size:0.84rem; color:var(--text-muted);">
+                *Dapur terakhir menerima pesanan (last order) 30 menit sebelum tutup.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Alamat -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon">📍</div>
+              <div>
+                <h3>Alamat Restoran</h3>
+                <span class="info-highlight">Parkir Luas &amp; Strategis</span>
+              </div>
+            </div>
+            <div class="info-details">
+              <p><strong>Jl. Boulevard Nusantara No. 88</strong></p>
+              <p>Kawasan Wisata Kuliner, Jakarta Selatan, DKI Jakarta 12560</p>
+              <p style="margin-top:8px; font-size:0.84rem; color:var(--text-muted);">
+                Patokan: 200 meter sebelah timur Alun-Alun Kota, seberang Taman Suropati.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Layanan & Meja -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <div class="info-icon">📞</div>
+              <div>
+                <h3>Layanan &amp; Meja</h3>
+                <span class="info-highlight">Simulasi Kasir / Meja</span>
+              </div>
+            </div>
+            <div class="info-details">
+              <p><strong>Telepon Resto:</strong> (021) 7890-1234</p>
+              <p><strong>WhatsApp Pesanan:</strong> +62 812-3456-7890</p>
+              <p style="margin-top:8px; font-size:0.84rem; color:var(--text-muted);">
+                Katalog ini dapat digunakan langsung di tablet meja pelanggan untuk mencatat pesanan mandiri.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Order Cart Drawer (Off-Canvas) ================= -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang Pesanan Pelanggan">
+    <!-- Drawer Header -->
+    <div class="cart-drawer-header">
+      <div class="drawer-title-group">
+        <svg width="22" height="22" fill="none" stroke="var(--primary)" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+        </svg>
+        <h3>Daftar Pesanan Meja</h3>
+      </div>
+      <button class="drawer-close-btn" id="cartCloseBtn" aria-label="Tutup Keranjang">✕</button>
+    </div>
+
+    <!-- Table Number Selection -->
+    <div class="order-setup-box">
+      <label for="tableSelect" class="table-selector-label">Tujuan Pesanan:</label>
+      <select id="tableSelect" class="table-select">
+        <option value="Meja 01">Meja 01 (Indoor AC)</option>
+        <option value="Meja 02">Meja 02 (Indoor AC)</option>
+        <option value="Meja 03">Meja 03 (Indoor AC)</option>
+        <option value="Meja 05" selected>Meja 05 (Lesehan Joglo)</option>
+        <option value="Meja 08">Meja 08 (Outdoor Garden)</option>
+        <option value="Meja 10">Meja 10 (Ruang VIP)</option>
+        <option value="Takeaway / Bungkus">Takeaway / Bungkus Pulang</option>
+      </select>
+    </div>
+
+    <!-- Cart Items Container (Dynamic) -->
+    <div class="cart-items-container" id="cartItemsContainer">
+      <!-- Injected by script.js -->
+    </div>
+
+    <!-- Drawer Footer Billing Calculation -->
+    <div class="cart-drawer-footer">
+      <div class="billing-row">
+        <span>Subtotal Pesanan:</span>
+        <strong id="cartSubtotal">Rp 0</strong>
+      </div>
+      <div class="billing-row">
+        <span>Pajak Restoran (PB1 10%):</span>
+        <strong id="cartTax">Rp 0</strong>
+      </div>
+      <div class="billing-total">
+        <span>Total Pembayaran:</span>
+        <span id="cartTotal">Rp 0</span>
+      </div>
+
+      <div class="cart-checkout-actions">
+        <button class="btn-receipt" id="checkoutReceiptBtn">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+          </svg>
+          Cetak Struk / Ringkasan Pesanan
+        </button>
+        <button class="btn-clear-cart" id="clearCartBtn">Kosongkan Keranjang</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= Menu Detail Modal ================= -->
+  <div class="modal-backdrop" id="detailModalBackdrop" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" id="detailModalClose" aria-label="Tutup popup detail">✕</button>
+      <img src="images/banner-main.jpg" alt="Preview Menu" class="modal-header-img" id="modalImg">
+      
+      <div class="modal-body">
+        <div class="modal-chips">
+          <span class="card-badge" id="modalBadge" style="position:static;">Favorit</span>
+          <span class="offline-pill" id="modalCategory">Makanan Utama</span>
+          <span class="offline-pill" id="modalPrepTime">⏱️ 15-20 mnt</span>
+          <span class="offline-pill" id="modalSpicy" style="color:#C84B31; border-color:#FCA5A5;">🌶️ Level Pedas</span>
+        </div>
+
+        <div class="modal-title-row">
+          <h3 class="modal-title" id="modalTitle">Nama Menu</h3>
+          <div class="modal-price" id="modalPrice">Rp 0</div>
+        </div>
+
+        <p class="modal-desc" id="modalDesc">Deskripsi lengkap hidangan.</p>
+
+        <div class="modal-ingredients-box">
+          <h4>Bahan-bahan &amp; Racikan Rempah:</h4>
+          <p id="modalIngredients">Bahan utama segar dan bumbu racik.</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span style="font-size:0.85rem; color:var(--text-muted);">Sajikan hangat &amp; higienis</span>
+        <button class="btn-primary" id="modalAddCartBtn" style="padding:10px 22px; font-size:0.92rem;">
+          + Tambahkan ke Pesanan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Receipt Thermal Printer Modal ================= -->
+  <div class="receipt-modal-backdrop" id="receiptModalBackdrop" aria-hidden="true">
+    <div class="receipt-paper" role="document">
+      <div class="receipt-header">
+        <div class="receipt-logo-title">SELERA NUSANTARA</div>
+        <div class="receipt-sub">
+          RUMAH MAKAN &amp; KULINER TRADISIONAL<br>
+          Jl. Boulevard Nusantara No. 88, Jakarta<br>
+          Telp: (021) 7890-1234
+        </div>
+      </div>
+
+      <div class="receipt-meta">
+        <div>No. Struk : <strong id="receiptOrderNo">SN-20260905-001</strong></div>
+        <div>Waktu     : <span id="receiptDate">05/09/2026 12:00 WIB</span></div>
+        <div>Lokasi    : <strong id="receiptTable">Meja 05</strong></div>
+        <div>Status    : <strong>DIPROSES DAPUR (OFFLINE)</strong></div>
+      </div>
+
+      <div class="receipt-divider"></div>
+
+      <!-- Itemized Lines -->
+      <div id="receiptItems">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="receipt-divider"></div>
+
+      <div class="receipt-summary-row">
+        <span>Subtotal</span>
+        <span id="receiptSubtotal">Rp 0</span>
+      </div>
+      <div class="receipt-summary-row">
+        <span>PB1 Resto (10%)</span>
+        <span id="receiptTax">Rp 0</span>
+      </div>
+      <div class="receipt-summary-row receipt-summary-total">
+        <span>TOTAL BAYAR</span>
+        <span id="receiptGrandTotal">Rp 0</span>
+      </div>
+
+      <div class="receipt-footer-notes">
+        ================================<br>
+        Terima kasih atas kunjungan Anda!<br>
+        Semoga hidangan kami berkesan di lidah &amp; hati.<br>
+        Instagram: @seleranusantara.id<br>
+        ================================
+      </div>
+
+      <div class="receipt-actions">
+        <button class="btn-print-now" id="receiptPrintBtn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+          </svg>
+          Print Struk
+        </button>
+        <button class="btn-close-receipt" id="receiptModalClose">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Site Footer ================= -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>SELERA <span>NUSANTARA</span></h4>
+        <p>
+          Menyajikan aneka masakan khas nusantara dengan sentuhan bumbu rempah pilihan, melestarikan cita rasa nusantara untuk generasi masa kini.
+        </p>
+        <div class="offline-pill" style="background: rgba(255,255,255,0.08); color: #4ADE80; border-color: rgba(74,222,128,0.2);">
+          <span class="offline-dot" style="background:#4ADE80; box-shadow:0 0 8px #4ADE80;"></span>
+          <span>Offline Ready: Akses Tanpa Sambungan Internet</span>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h5>Tautan Cepat</h5>
+        <ul>
+          <li><a href="#beranda">Beranda Utama</a></li>
+          <li><a href="#keunggulan">Keunggulan Kami</a></li>
+          <li><a href="#katalog-menu">Katalog Hidangan</a></li>
+          <li><a href="#tentang-kami">Cerita Restoran</a></li>
+          <li><a href="#informasi-kontak">Kontak &amp; Alamat</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h5>Jam Pelayanan</h5>
+        <p><strong>Setiap Hari:</strong> 10:00 - 22:00 WIB</p>
+        <p><strong>Dapur Terakhir:</strong> 21:30 WIB</p>
+        <p><strong>Layanan Meja &amp; Bungkus:</strong> Selalu Tersedia</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Rumah Makan Selera Nusantara. Seluruh Hak Cipta Dilindungi.</p>
+      <p>Dibangun sesuai spesifikasi PRD Offline Version (HTML5, Vanilla CSS3, Vanilla JS).</p>
+    </div>
+  </footer>
+
+  <!-- ================= JavaScript Scripts (Offline Relative Paths) ================= -->
+  <script src="js/data-menu.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

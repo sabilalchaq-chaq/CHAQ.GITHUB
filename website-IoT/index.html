@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyamIoT Farm - Peternakan Ayam Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AyamIoT Farm</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#monitoring">Monitoring</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Peternakan Ayam Berbasis IoT</h1>
+            <p>Tingkatkan efisiensi dan kualitas panen dengan teknologi pemantauan modern.</p>
+            <div class="hero-buttons">
+                <a href="#layanan" class="btn btn-primary">Lihat Layanan</a>
+                <a href="#monitoring" class="btn btn-secondary">Monitoring Kandang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="section">
+        <h2>Tentang Kami</h2>
+        <div class="tentang-container">
+            <div class="tentang-text">
+                <p>AyamIoT Farm adalah penyedia layanan peternakan ayam masa depan yang mengintegrasikan Internet of Things (IoT). Kami membantu peternak memantau kondisi kandang secara akurat untuk memastikan kesehatan ayam dan hasil panen yang optimal. Kami percaya bahwa teknologi dapat menyederhanakan proses peternakan.</p>
+            </div>
+            <div class="tentang-image">
+                <img src="images/peternakan.jpg" alt="Peternakan Ayam">
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="section bg-light">
+        <h2>Layanan Kami</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Monitoring Kandang</h3>
+                <p>Pemantauan kondisi kandang secara keseluruhan secara real-time.</p>
+            </div>
+            <div class="card">
+                <h3>Monitoring Suhu</h3>
+                <p>Menampilkan data suhu untuk menjaga kehangatan ayam yang ideal.</p>
+            </div>
+            <div class="card">
+                <h3>Monitoring Kelembapan</h3>
+                <p>Pemantauan sirkulasi udara dan tingkat kelembapan kandang.</p>
+            </div>
+            <div class="card">
+                <h3>Pemantauan Pakan</h3>
+                <p>Informasi otomatis mengenai ketersediaan stok pakan ayam.</p>
+            </div>
+            <div class="card">
+                <h3>Konsultasi Peternakan</h3>
+                <p>Layanan konsultasi untuk pengelolaan peternakan modern berbasis teknologi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitoring IoT -->
+    <section id="monitoring" class="section">
+        <h2>Monitoring IoT (Live Simulation)</h2>
+        <p class="subtitle">Data terakhir diperbarui: <span id="last-update">Memuat...</span></p>
+        <div class="dashboard">
+            <div class="sensor-box" id="suhu-box">
+                <div class="sensor-title">Suhu</div>
+                <div class="sensor-value" id="val-suhu">28°C</div>
+                <div class="sensor-status" id="stat-suhu">Normal</div>
+            </div>
+            <div class="sensor-box" id="kelembapan-box">
+                <div class="sensor-title">Kelembapan</div>
+                <div class="sensor-value" id="val-kelembapan">65%</div>
+                <div class="sensor-status" id="stat-kelembapan">Normal</div>
+            </div>
+            <div class="sensor-box" id="pakan-box">
+                <div class="sensor-title">Pakan</div>
+                <div class="sensor-value" id="val-pakan">80%</div>
+                <div class="sensor-status" id="stat-pakan">Tersedia</div>
+            </div>
+            <div class="sensor-box" id="kandang-box">
+                <div class="sensor-title">Kandang</div>
+                <div class="sensor-value" id="val-kandang">Aktif</div>
+                <div class="sensor-status" id="stat-kandang">Normal</div>
+            </div>
+            <div class="sensor-box" id="sistem-box">
+                <div class="sensor-title">Sistem (Lokal)</div>
+                <div class="sensor-value" id="val-sistem">Aktif</div>
+                <div class="sensor-status" id="stat-sistem">OK</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan & Proses Kerja -->
+    <section id="keunggulan" class="section bg-light">
+        <h2>Keunggulan & Proses Kerja</h2>
+        <div class="keunggulan-container">
+            <div class="keunggulan-list">
+                <h3>Mengapa Memilih Kami?</h3>
+                <ul>
+                    <li>Monitoring lebih mudah dan akurat.</li>
+                    <li>Informasi lebih terstruktur.</li>
+                    <li>Membantu pemantauan kondisi kandang otomatis.</li>
+                    <li>Menggunakan teknologi modern dan andal.</li>
+                    <li>Tampilan sederhana dan mudah digunakan.</li>
+                </ul>
+            </div>
+            <div class="proses-kerja">
+                <h3>Alur Kerja Sistem</h3>
+                <div class="alur">
+                    <span>Sensor</span> ➔ <span>Data</span> ➔ <span>Sistem IoT</span> ➔ <span>Monitoring</span> ➔ <span>Informasi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="section">
+        <h2>Galeri</h2>
+        <div class="gallery-grid">
+            <img src="images/kandang.jpg" alt="Kandang Ayam">
+            <img src="images/ayam.jpg" alt="Ayam Ternak">
+            <img src="images/pakan.jpg" alt="Pakan Ayam">
+            <img src="images/monitoring.jpg" alt="Sistem Monitoring">
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section bg-light">
+        <h2>Hubungi Kami</h2>
+        <div class="kontak-container">
+            <div class="info-kontak">
+                <h3>AyamIoT Farm</h3>
+                <p>📍 Jl. Peternakan Maju No. 123</p>
+                <p>📞 0812-3456-7890</p>
+                <p>✉️ info@ayamiot.local</p>
+            </div>
+            <form id="contact-form" class="form-kontak">
+                <input type="text" id="nama" placeholder="Nama Anda" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <textarea id="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+        <!-- Notifikasi Form -->
+        <div id="form-notif" class="notif hidden">Pesan berhasil dikirim (Simulasi Lokal)</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>AyamIoT Farm</h3>
+            <p>Solusi cerdas peternakan ayam modern berbasis IoT.</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#monitoring">Monitoring</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            &copy; 2026 AyamIoT Farm. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
